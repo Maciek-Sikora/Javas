@@ -1,28 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import List from './List'
+import A from './A'
+import Email from './Email'
+import Telefon from './Telefon'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+
+function App(){
+  return (
+<div>
+<A link= "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Amazon_logo_plain.svg/1280px-Amazon_logo_plain.svg.png"/>
+<Email email= "ja" />
+<Telefon telefon= "123" />
+<A link= "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Amazon-Video.svg/2000px-Amazon-Video.svg.png"/>
+<Email email= "jaa" />
+<Telefon telefon= "1223" />
+</div>
+    
+   
+  )
 }
-
-export default App;
+export default App
